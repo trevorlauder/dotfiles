@@ -1,5 +1,7 @@
 # Dotfiles
 
+[https://www.lauder.family/blog/2025/08/09/macOS-Dotfiles-Bare-Git-Setup/](https://www.lauder.family/blog/2025/08/09/macOS-Dotfiles-Bare-Git-Setup/)
+
 ## Required Tools
 
 | Name | Site / Repo | Install |
