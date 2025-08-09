@@ -37,7 +37,7 @@ config = {
   font = wezterm.font("FiraCode Nerd Font", {weight=450, stretch="Normal", style="Normal"}),
   font_size = 20,
   harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-  cursor_thickness = 3,
+  cursor_thickness = 5,
   cursor_blink_rate = 500,
   cursor_blink_ease_in = "EaseIn",
   cursor_blink_ease_out = "EaseOut",
