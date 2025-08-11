@@ -19,7 +19,6 @@
 | starship | https://starship.rs | `brew install starship` |
 | zoxide | https://github.com/ajeetdsouza/zoxide | `brew install zoxide` |
 | mise | https://mise.jdx.dev | `brew install mise` |
-| pipx | https://pipx.pypa.io | `brew install pipx` |
-| poetry | https://python-poetry.org | `pipx install poetry` |
+| poetry | https://python-poetry.org | `brew install poetry` |
 | Visual Studio Code | https://code.visualstudio.com | (site) |
 | zgen | https://github.com/tarjoilija/zgen | (site) |
