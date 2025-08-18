@@ -42,7 +42,23 @@ export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 
 # Tool-specific environment.
-export EZA_CONFIG_DIR="$HOME/.config/eza"
+export EZA_COLORS="\
+  uu=36:\
+  uR=31:\
+  un=35:\
+  gu=37:\
+  da=2;34:\
+  ur=34:\
+  uw=95:\
+  ux=36:\
+  ue=36:\
+  gr=34:\
+  gw=35:\
+  gx=36:\
+  tr=34:\
+  tw=35:\
+  tx=36:\
+  xx=95:"
 
 eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
@@ -50,10 +66,8 @@ eval "$(starship init zsh)"
 
 alias cd="z"
 alias cat="bat --paging=never"
-alias ls="eza --icons=always"
+alias ls='eza -lagX --icons --color=always'
 alias dotfiles="/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-alias vim="nvim"
-alias vi="nvim"
 
 autoload -Uz compinit
 if [[ -z ${ZSH_COMPDUMP:-} || ! -f ${ZSH_COMPDUMP} ]]; then
