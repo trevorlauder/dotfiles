@@ -69,6 +69,8 @@ alias cat="bat --paging=never"
 alias ls='eza -lagX --icons --color=always'
 alias dotfiles="/opt/homebrew/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
+export HOMEBREW_NO_ENV_HINTS=1
+
 autoload -Uz compinit
 if [[ -z ${ZSH_COMPDUMP:-} || ! -f ${ZSH_COMPDUMP} ]]; then
   compinit
@@ -82,4 +84,5 @@ fi
 function set_win_title(){
   echo -ne "\033]0; $(basename "$PWD") \007"
 }
+
 precmd_functions+=(set_win_title)
