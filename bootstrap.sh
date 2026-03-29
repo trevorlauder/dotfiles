@@ -2,7 +2,7 @@
 
 mkdir -p ${HOME}/.local/bin
 
-mise use starship fzf
+(cd ${HOME} && mise use starship fzf)
 
 chezmoi init https://github.com/trevorlauder/dotfiles
 chezmoi apply
