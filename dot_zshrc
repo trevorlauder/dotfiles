@@ -68,6 +68,8 @@ if ! zgen saved; then
   zgen save
 fi
 
+eval "$(mise activate zsh)"
+
 source <(fzf --zsh)
 
 # Per-machine or secret values: $HOME/.dotfiles-local-settings (optional)
@@ -79,5 +81,4 @@ function set_win_title(){
 
 precmd_functions+=(set_win_title)
 
-eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
