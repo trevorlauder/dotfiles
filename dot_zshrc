@@ -60,7 +60,16 @@ else
   compinit -C
 fi
 
-source $(brew --prefix)/opt/zsh-git-prompt/zshrc.sh
+source "${HOME}/.zgen/zgen.zsh"
+
+if ! zgen saved; then
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/git
+  zgen load zsh-users/zsh-syntax-highlighting
+  zgen load zsh-users/zsh-autosuggestions
+  zgen save
+fi
+
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(fzf --zsh)
