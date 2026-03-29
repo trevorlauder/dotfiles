@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p ${HOME}/.local/bin
+
 brew install chezmoi \
   starship \
   fzf \
