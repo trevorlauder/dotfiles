@@ -70,8 +70,6 @@ if ! zgen saved; then
   zgen save
 fi
 
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(fzf --zsh)
 
 # Per-machine or secret values: $HOME/.dotfiles-local-settings (optional)
