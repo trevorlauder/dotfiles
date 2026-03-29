@@ -24,7 +24,6 @@ setopt APPEND_HISTORY INC_APPEND_HISTORY SHARE_HISTORY
 # Prepend higher-priority user/tool bins.
 path_add prepend \
   $(brew --prefix)/opt/{coreutils,findutils,gawk}/libexec/gnubin \
-  "$HOME/.poetry/bin" \
   $(brew --prefix)/opt/openssl@3/bin
 
 # Append lower-priority convenience bins.
@@ -48,6 +47,10 @@ else
   compinit -C
 fi
 
+source $(brew --prefix)/opt/zsh-git-prompt/zshrc.sh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source <(fzf --zsh)
 
 # Per-machine or secret values: $HOME/.dotfiles-local-settings (optional)
 [[ -f "$HOME/.dotfiles-local-settings" ]] && source "$HOME/.dotfiles-local-settings"
@@ -58,14 +61,4 @@ function set_win_title(){
 
 precmd_functions+=(set_win_title)
 
-source $(brew --prefix)/opt/zsh-git-prompt/zshrc.sh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source <(fzf --zsh)
-
-: "${USE_STARSHIP:=true}"
-if [ "${USE_STARSHIP}" = "true" ]; then
-  source "${HOME}/.starship.zshrc"
-else
-  source "${HOME}/.omp.zshrc"
-fi
+eval "$(starship init zsh)"
