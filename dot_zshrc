@@ -41,7 +41,7 @@ path_add prepend \
 
 # Append lower-priority convenience bins.
 path_add append \
-  "$HOME/.local/bin" \
+  "${HOME}/.local/bin" \
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 unset -f path_add
