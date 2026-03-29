@@ -1,0 +1,71 @@
+# Use path array for cleaner manipulation and uniqueness.
+typeset -U path PATH
+
+# Helper for adding paths: path_add <prepend|append> paths...
+path_add() {
+  local mode=$1; shift
+  local p
+  for p in "$@"; do
+    [[ -d $p ]] || continue
+    case $mode in
+      prepend) path=($p $path) ;;
+      append)  path+=($p) ;;
+    esac
+  done
+}
+
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+export SAVEHIST=10000
+export HISTFILE="${HOME}/.zsh_history"
+
+setopt APPEND_HISTORY INC_APPEND_HISTORY SHARE_HISTORY
+
+# Prepend higher-priority user/tool bins.
+path_add prepend \
+  $(brew --prefix)/opt/{coreutils,findutils,gawk}/libexec/gnubin \
+  "$HOME/.poetry/bin" \
+  $(brew --prefix)/opt/openssl@3/bin
+
+# Append lower-priority convenience bins.
+path_add append \
+  "$HOME/.local/bin" \
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+unset -f path_add
+
+# OpenSSL build flags (Homebrew OpenSSL 3).
+export LDFLAGS="-L$(brew --prefix)/opt/openssl@3/lib"
+export CPPFLAGS="-I$(brew --prefix)/opt/openssl@3/include"
+export PKG_CONFIG_PATH="$(brew --prefix)/opt/openssl@3/lib/pkgconfig"
+
+alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+autoload -Uz compinit
+if [[ -z ${ZSH_COMPDUMP:-} || ! -f ${ZSH_COMPDUMP} ]]; then
+  compinit
+else
+  compinit -C
+fi
+
+
+# Per-machine or secret values: $HOME/.dotfiles-local-settings (optional)
+[[ -f "$HOME/.dotfiles-local-settings" ]] && source "$HOME/.dotfiles-local-settings"
+
+function set_win_title(){
+  echo -ne "\033]0; $(basename "$PWD") \007"
+}
+
+precmd_functions+=(set_win_title)
+
+source $(brew --prefix)/opt/zsh-git-prompt/zshrc.sh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source <(fzf --zsh)
+
+: "${USE_STARSHIP:=true}"
+if [ "${USE_STARSHIP}" = "true" ]; then
+  source "${HOME}/.starship.zshrc"
+else
+  source "${HOME}/.omp.zshrc"
+fi

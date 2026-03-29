@@ -1,0 +1,17 @@
+[tools]
+helm = "4.0"
+k6 = "latest"
+k9s = "latest"
+kubectl = "1.35"
+kustomize = "5.8"
+linkerd = "latest"
+node = "24"
+python = "3"
+ruby = "3"
+terraform = "1.5"
+vcluster = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node", "ruby"]
+experimental = true
+
