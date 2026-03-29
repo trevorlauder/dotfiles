@@ -2,9 +2,7 @@
 
 mkdir -p ${HOME}/.local/bin
 
-brew install chezmoi \
-  starship \
-  fzf
+mise install starship fzf
 
 chezmoi init https://github.com/trevorlauder/dotfiles
 chezmoi apply
