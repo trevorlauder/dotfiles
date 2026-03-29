@@ -36,7 +36,6 @@ fi
 
 # Prepend higher-priority user/tool bins.
 path_add prepend \
-  ${HOME}/.local/bin \
   $(brew --prefix)/opt/{coreutils,findutils,gawk}/libexec/gnubin \
   $(brew --prefix)/opt/openssl@3/bin
 
