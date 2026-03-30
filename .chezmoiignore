@@ -1,0 +1,3 @@
+{{ if ne .chezmoi.data.context "personal" }}
+.config/mise/config.toml
+{{ end }}
