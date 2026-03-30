@@ -1,38 +1,4 @@
-# Use path array for cleaner manipulation and uniqueness.
-typeset -U path PATH
-
-# Helper for adding paths: path_add <prepend|append> paths...
-path_add() {
-  local mode=$1; shift
-  local p
-  for p in "$@"; do
-    [[ -d $p ]] || continue
-    case $mode in
-      prepend) path=($p $path) ;;
-      append)  path+=($p) ;;
-    esac
-  done
-}
-
 alias cat='bat --paging=never'
-
-export HISTFILESIZE=10000
-export HISTSIZE=10000
-export SAVEHIST=10000
-
-if [[ "${DEVCONTAINER}" == "true" ]]; then
-  export HISTFILE="/commandhistory/.zsh_history"
-else
-  export HISTFILE="${HOME}/.zsh_history"
-fi
-
-setopt APPEND_HISTORY INC_APPEND_HISTORY SHARE_HISTORY
-
-path_add append \
-  "${HOME}/.local/bin" \
-  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-unset -f path_add
 
 autoload -Uz compinit
 if [[ -z ${ZSH_COMPDUMP:-} || ! -f ${ZSH_COMPDUMP} ]]; then
@@ -63,7 +29,5 @@ function set_win_title(){
 }
 
 precmd_functions+=(set_win_title)
-
-export GITHUB_TOKEN=$(gh auth token)
 
 eval "$(starship init zsh)"

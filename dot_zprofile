@@ -1,3 +1,37 @@
+# Use path array for cleaner manipulation and uniqueness.
+typeset -U path PATH
+
+# Helper for adding paths: path_add <prepend|append> paths...
+path_add() {
+  local mode=$1; shift
+  local p
+  for p in "$@"; do
+    [[ -d $p ]] || continue
+    case $mode in
+      prepend) path=($p $path) ;;
+      append)  path+=($p) ;;
+    esac
+  done
+}
+
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+if [[ "${DEVCONTAINER}" == "true" ]]; then
+  export HISTFILE="/commandhistory/.zsh_history"
+else
+  export HISTFILE="${HOME}/.zsh_history"
+fi
+
+setopt APPEND_HISTORY INC_APPEND_HISTORY SHARE_HISTORY
+
+path_add append \
+  "${HOME}/.local/bin" \
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+unset -f path_add
+
 export HOMEBREW_NO_ENV_HINTS=1
 
 if ! command -v brew >/dev/null 2>&1; then
@@ -16,5 +50,7 @@ if ! command -v brew >/dev/null 2>&1; then
     $(brew --prefix)/opt/{coreutils,findutils,gawk}/libexec/gnubin \
     $(brew --prefix)/opt/openssl@3/bin
 fi
+
+export GITHUB_TOKEN=$(gh auth token)
 
 eval "$(mise activate zsh)"
