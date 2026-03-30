@@ -1,12 +1,12 @@
 [user]
 {{- if eq .context "work" }}
-        name = Trevor Lauder
-        email = trevor@work-domain.com
-        signingkey = key::ssh-ed25519 WORK_KEY
+	name = Trevor Lauder
+	email = trevor.l@getjobber.com
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBSUVAIeDzcblOEpMsc/j99JM84OcqLoRqMlkM4V/xV+
 {{- else }}
-        name = Trevor Lauder
-        email = me@trevorlauder.dev
-        signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ8Kxf3xBGGiw6nvswyyCTfSd57cezaY25v72wGadcrA
+	name = Trevor Lauder
+	email = me@trevorlauder.dev
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ8Kxf3xBGGiw6nvswyyCTfSd57cezaY25v72wGadcrA
 {{- end }}
 [fetch]
 	prune = true
