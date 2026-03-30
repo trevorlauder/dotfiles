@@ -30,8 +30,6 @@ path_add append \
   "${HOME}/.local/bin" \
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-unset -f path_add
-
 export HOMEBREW_NO_ENV_HINTS=1
 
 if ! command -v brew >/dev/null 2>&1; then
@@ -51,6 +49,6 @@ if ! command -v brew >/dev/null 2>&1; then
     $(brew --prefix)/opt/openssl@3/bin
 fi
 
-export GITHUB_TOKEN=$(gh auth token)
+unset -f path_add
 
-eval "$(mise activate zsh)"
+export GITHUB_TOKEN=$(gh auth token)
