@@ -81,4 +81,6 @@ function set_win_title(){
 
 precmd_functions+=(set_win_title)
 
+export GH_TOKEN=$(gh auth token)
+
 eval "$(starship init zsh)"
