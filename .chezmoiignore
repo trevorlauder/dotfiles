@@ -1,3 +1,0 @@
-{{ if ne .context "personal" }}
-.config/mise/config.toml
-{{ end }}
