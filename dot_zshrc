@@ -32,4 +32,10 @@ function set_win_title(){
 
 precmd_functions+=(set_win_title)
 
+if [[ "${DEVCONTAINER}" == "true" ]]; then
+  export HISTFILE="/commandhistory/.zsh_history"
+else
+  export HISTFILE="${HOME}/.zsh_history"
+fi
+
 eval "$(starship init zsh)"
