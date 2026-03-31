@@ -19,6 +19,8 @@ fi
 
 eval "$(mise activate zsh)"
 
+export GITHUB_TOKEN=$(gh auth token)
+
 source <(fzf --zsh)
 
 # Per-machine or secret values: $HOME/.dotfiles-local-settings (optional)
