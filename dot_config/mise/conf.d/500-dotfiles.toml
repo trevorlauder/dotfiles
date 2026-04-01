@@ -9,6 +9,9 @@ delta = "0.19.2"
 starship = "1.24.2"
 uv = "0.11.2"
 bat = "0.26.1"
+prek = "0.3.6"
+python = "3.14.3"
+
 
 [settings.ruby]
 compile = false
