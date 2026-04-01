@@ -45,6 +45,7 @@ if ! command -v brew >/dev/null 2>&1; then
   fi
 
   if [[ -x ${brew_cmd} ]]; then
+    export HOMEBREW_NO_ENV_HINTS=1
     eval "$(${brew_cmd} shellenv zsh)"
   fi
 fi
@@ -60,12 +61,14 @@ if command -v brew >/dev/null 2>&1; then
     $(brew --prefix)/opt/openssl@3/bin
 fi
 
-MISE_GLOBAL_CONFIG_FILE="${HOME}/.config/mise/conf.d/900-dotfiles.toml"
+export MISE_GLOBAL_CONFIG_FILE="${HOME}/.config/mise/conf.d/900-dotfiles.toml"
 eval "$(mise activate zsh)"
 
 export GITHUB_TOKEN=$(gh auth token)
 
-source <(fzf --zsh)
+if command -v fzf >/dev/null 2>&1; then
+  source <(mise exec fzf -- fzf --zsh)
+fi
 
 # Per-machine or secret values: $HOME/.dotfiles-local-settings (optional)
 [[ -f "$HOME/.dotfiles-local-settings" ]] && source "$HOME/.dotfiles-local-settings"
