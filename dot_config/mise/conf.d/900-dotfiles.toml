@@ -12,6 +12,5 @@ bat = "0.26.1"
 prek = "0.3.6"
 python = "3.14.3"
 
-
 [settings.ruby]
 compile = false
