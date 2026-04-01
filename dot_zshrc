@@ -60,6 +60,7 @@ if command -v brew >/dev/null 2>&1; then
     $(brew --prefix)/opt/openssl@3/bin
 fi
 
+MISE_GLOBAL_CONFIG_FILE="${HOME}/.config/mise/conf.d/900-dotfiles.toml"
 eval "$(mise activate zsh)"
 
 export GITHUB_TOKEN=$(gh auth token)
