@@ -2,8 +2,8 @@
 
 mkdir -p ${HOME}/.local/bin
 
-git clone --depth 1 https://github.com/tarjoilija/zgen.git "${HOME_DIR}/.zgen"
-rm -rf "${HOME_DIR}/.zgen/.git"
+git clone --depth 1 https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+rm -rf "${HOME}/.zgen/.git"
 
 mise install -y
 
