@@ -27,6 +27,7 @@ else
   compinit -C
 fi
 
+chmod -R go-w "${HOME}/.zgen" 2>/dev/null || true
 source "${HOME}/.zgen/zgen.zsh"
 
 if ! zgen saved; then
