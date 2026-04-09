@@ -64,8 +64,6 @@ fi
 
 eval "$(mise activate zsh)"
 
-export GITHUB_TOKEN=$(gh auth token)
-
 if command -v fzf >/dev/null 2>&1; then
   source <(mise exec fzf -- fzf --zsh)
 fi
