@@ -12,4 +12,4 @@ mise use -g chezmoi
 mise exec -- chezmoi init https://github.com/trevorlauder/dotfiles
 mise exec -- chezmoi apply
 
-mise unuse -g chezmoi
+mise unuse -p ${HOME}/.config/mise/conf.d/999-base.toml chezmoi
