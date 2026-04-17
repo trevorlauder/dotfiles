@@ -83,8 +83,6 @@ export SAVEHIST=10000
 
 setopt APPEND_HISTORY INC_APPEND_HISTORY SHARE_HISTORY
 
-export DEVCONTAINER_DOTFILES_TOOL="chezmoi"
-
 unset -f path_add
 
 eval "$(starship init zsh)"
