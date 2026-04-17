@@ -11,3 +11,5 @@ mise use -g chezmoi
 
 mise exec -- chezmoi init https://github.com/trevorlauder/dotfiles
 mise exec -- chezmoi apply
+
+mise unuse -g chezmoi
