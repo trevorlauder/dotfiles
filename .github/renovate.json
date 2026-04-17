@@ -13,6 +13,14 @@
   },
   "packageRules": [
     {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
       "matchManagers": [
         "github-actions"
       ],
