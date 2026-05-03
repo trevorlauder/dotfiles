@@ -13,10 +13,6 @@ prek = "0.3.8"
 python = "3.14.4"
 k9s = "0.50.18"
 chezmoi = "2.70.2"
-{{- if eq .context "work" }}
-{{- else }}
-k6 = "1.7.1"
-{{- end }}
 
 [settings.ruby]
 compile = false

@@ -2,3 +2,6 @@ mise.toml
 README.md
 bootstrap.sh
 dprint.json
+{{- if eq .context "work" }}
+.config/mise/conf.d/100-dotfiles-personal.toml
+{{- end }}

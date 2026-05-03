@@ -8,7 +8,7 @@
   ],
   "mise": {
     "managerFilePatterns": [
-      "/dot_config/mise/conf\\.d/100-dotfiles.toml.tmpl$/"
+      "/dot_config/mise/conf\\.d/.+\\.toml$/"
     ]
   },
   "packageRules": [
