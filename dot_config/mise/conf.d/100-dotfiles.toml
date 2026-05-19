@@ -3,14 +3,14 @@ experimental = true
 
 [tools]
 fzf = "0.72.0"
-claude-code = "2.1.137"
+claude-code = "2.1.143"
 github-cli = "2.92.0"
 delta = "0.19.2"
 starship = "1.25.1"
-uv = "0.11.12"
+uv = "0.11.15"
 bat = "0.26.1"
-prek = "0.3.13"
-python = "3.14.4"
+prek = "0.4.0"
+python = "3.14.5"
 k9s = "0.50.18"
 chezmoi = "2.70.3"
 
