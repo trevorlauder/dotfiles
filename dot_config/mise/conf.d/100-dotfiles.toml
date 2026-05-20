@@ -3,7 +3,6 @@ experimental = true
 
 [tools]
 fzf = "0.72.0"
-claude-code = "2.1.143"
 github-cli = "2.92.0"
 delta = "0.19.2"
 starship = "1.25.1"
