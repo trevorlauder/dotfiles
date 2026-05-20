@@ -3,7 +3,7 @@ set -euo pipefail
 
 mkdir -p ${HOME}/.local/bin
 
-rm -rf "${HOME}/.zgen
+rm -rf "${HOME}/.zgen"
 git clone --depth 1 https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 rm -rf "${HOME}/.zgen/.git"
 
