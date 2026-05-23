@@ -8,3 +8,6 @@ dprint.json
 {{- if or (eq .context "work") (ne .chezmoi.os "linux") }}
 .config/mise/conf.d/100-dotfiles-personal-container.toml
 {{- end }}
+{{- if ne .chezmoi.os "darwin" }}
+.config/mise/conf.d/100-dotfiles-macos.toml
+{{- end }}
