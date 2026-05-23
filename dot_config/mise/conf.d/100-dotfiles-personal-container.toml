@@ -1,0 +1,3 @@
+[tools]
+claude-code = "2.1.150"
+rtk = "0.41.0"
