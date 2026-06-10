@@ -6,12 +6,12 @@ fzf = "0.73.1"
 github-cli = "2.93.0"
 delta = "0.19.2"
 starship = "1.25.1"
-uv = "0.11.18"
+uv = "0.11.19"
 bat = "0.26.1"
-prek = "0.4.3"
+prek = "0.4.4"
 python = "3.14.5"
-k9s = "0.50.18"
-chezmoi = "2.70.4"
+k9s = "0.51.0"
+chezmoi = "2.70.5"
 
 [settings.ruby]
 compile = false
