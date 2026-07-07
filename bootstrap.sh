@@ -9,9 +9,11 @@ rm -rf "${HOME}/.zgen/.git"
 
 mise trust ~/.dotfiles
 
-mise use -p ${HOME}/.config/mise/conf.d/000-bootstrap.toml chezmoi
+cp ~/.dotfiles/dot_config/mise/config.toml ~/.config/mise/
+cp ~/.dotfiles/dot_config/mise/conf.d/100-dotfiles.toml ~/.config/mise/conf.d/
+cp ~/.dotfiles/dot_config/mise/mise.lock ~/.config/mise/
+
+mise install chezmoi
 
 mise exec -- chezmoi init https://github.com/trevorlauder/dotfiles
 mise exec -- chezmoi apply
-
-rm -f ${HOME}/.config/mise/conf.d/000-bootstrap.toml
