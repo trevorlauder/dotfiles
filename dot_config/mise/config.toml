@@ -2,3 +2,4 @@
 locked = true
 lockfile = true
 minimum_release_age = "7d"
+npm.package_manager = "aube"
