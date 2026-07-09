@@ -15,19 +15,19 @@ url = "https://github.com/astral-sh/uv/releases/download/0.11.28/uv-aarch64-appl
 provenance = "github-attestations"
 
 [[tools.aube]]
-version = "1.25.1"
+version = "1.25.2"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:c7efb8a0ebd8d83ac8a1c96d388b582fd2f28bae80ed81b3786e2a63d871babe"
-url = "https://github.com/jdx/aube/releases/download/v1.25.1/aube-v1.25.1-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/458188072"
+checksum = "sha256:3ae9c7be170a7859923ff00f03e5f6daa203852cba0a640756dd14f62dd597ff"
+url = "https://github.com/jdx/aube/releases/download/v1.25.2/aube-v1.25.2-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/463676783"
 provenance = "github-attestations"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:3d99c9c6d9d20f271312db39c46022898d765b6a407574f59d6accb0a430ee32"
-url = "https://github.com/jdx/aube/releases/download/v1.25.1/aube-v1.25.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/458198306"
+checksum = "sha256:fceb52801a0bf68617f8cea39bc3a7f4965b49c6f64d19425f44020eae6c19e4"
+url = "https://github.com/jdx/aube/releases/download/v1.25.2/aube-v1.25.2-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/463691613"
 provenance = "github-attestations"
 
 [[tools.bat]]
