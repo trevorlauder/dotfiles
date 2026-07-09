@@ -194,4 +194,4 @@ url = "https://github.com/starship/starship/releases/download/v1.26.0/starship-a
 
 [[tools.uv]]
 version = "0.11.28"
-backend = "aqua:astral-sh/uv"
+backend = "asdf:uv"
