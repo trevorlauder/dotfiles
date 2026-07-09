@@ -7,6 +7,8 @@ starship = "1.26.0"
 bat = "0.26.1"
 prek = "0.4.8"
 chezmoi = "2.71.0"
+aube = "1.25.1"
+node = "26.4.0"
 uv = "0.11.28"
 python = "3.14.6"
 
