@@ -9,7 +9,7 @@ prek = "0.4.8"
 chezmoi = "2.71.0"
 aube = "1.25.1"
 node = "26.4.0"
-"asdf:uv" = "0.11.28"
+"aqua:astral-sh/uv" = "0.11.28"
 python = "3.14.6"
 
 [settings.ruby]
