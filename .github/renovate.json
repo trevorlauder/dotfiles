@@ -6,6 +6,7 @@
   "schedule": [
     "* 0 * * *"
   ],
+  "minimumReleaseAge": "7 days",
   "mise": {
     "managerFilePatterns": [
       "/dot_config/mise/conf\\.d/.+\\.toml$/",
