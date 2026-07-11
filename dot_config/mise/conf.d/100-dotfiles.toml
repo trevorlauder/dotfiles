@@ -5,10 +5,10 @@ experimental = true
 delta = "0.19.2"
 starship = "1.26.0"
 bat = "0.26.1"
-prek = "0.4.8"
+prek = "0.4.9"
 chezmoi = "2.71.0"
-aube = "v1.25.2"
-node = "26.4.0"
+aube = "v1.26.0"
+node = "26.5.0"
 "aqua:astral-sh/uv" = "0.11.28"
 python = "3.14.6"
 

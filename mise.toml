@@ -1,4 +1,4 @@
 [tools]
 dprint = "0.55.1"
-trufflehog = "3.95.8"
-prek = "0.4.8"
+trufflehog = "v3.95.9"
+prek = "0.4.9"
