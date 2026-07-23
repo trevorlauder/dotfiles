@@ -7,9 +7,9 @@ starship = "1.26.0"
 bat = "0.26.1"
 prek = "0.4.9"
 chezmoi = "2.71.0"
-aube = "v1.26.0"
+aube = "v1.27.0"
 node = "26.5.0"
-"aqua:astral-sh/uv" = "0.11.28"
+"aqua:astral-sh/uv" = "0.11.29"
 python = "3.14.6"
 
 [settings.ruby]
