@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 mise_dir="$repo_root/dot_config/mise"
 lockfile="$mise_dir/mise.lock"
 

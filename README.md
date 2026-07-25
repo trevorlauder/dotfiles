@@ -15,7 +15,6 @@
 | mise               | https://mise.jdx.dev                   | `brew install mise`      |
 | git                | https://git-scm.com                    | `mise install`           |
 | bat                | https://github.com/sharkdp/bat         | `mise install`           |
-| claude-code        | https://claude.ai/code                 | `mise install`           |
 | delta              | https://github.com/dandavison/delta    | `mise install`           |
 | fzf                | https://github.com/junegunn/fzf        | `mise install`           |
 | github-cli         | https://cli.github.com                 | `mise install`           |
