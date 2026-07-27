@@ -15,19 +15,19 @@ url = "https://github.com/dprint/dprint/releases/download/0.55.2/dprint-aarch64-
 url_api = "https://api.github.com/repos/dprint/dprint/releases/assets/477041350"
 
 [[tools.prek]]
-version = "0.4.9"
+version = "0.4.10"
 backend = "aqua:j178/prek"
 
 [tools.prek."platforms.linux-arm64"]
-checksum = "sha256:adcd6d3b2c6d2314525c214ead1a3584de3ea3dfd608262d60711c3dde4d5e82"
-url = "https://github.com/j178/prek/releases/download/v0.4.9/prek-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/j178/prek/releases/assets/473433142"
+checksum = "sha256:9e743f493f681e84b94e65bec1199d992643f0bf4ce0929880298b3b4747989e"
+url = "https://github.com/j178/prek/releases/download/v0.4.10/prek-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/j178/prek/releases/assets/479037984"
 provenance = "github-attestations"
 
 [tools.prek."platforms.macos-arm64"]
-checksum = "sha256:d6d705468c95ac01a9768da952645385a8e3cb93ec9a105f9f0f7bd177ae3867"
-url = "https://github.com/j178/prek/releases/download/v0.4.9/prek-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/j178/prek/releases/assets/473433139"
+checksum = "sha256:b2be74cd80bc86f679d92ae368d154ce391e4ef9891dc54447976b92df7951f1"
+url = "https://github.com/j178/prek/releases/download/v0.4.10/prek-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/j178/prek/releases/assets/479037973"
 provenance = "github-attestations"
 
 [[tools.trufflehog]]
