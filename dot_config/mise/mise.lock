@@ -17,19 +17,19 @@ url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/487747526"
 provenance = "github-attestations"
 
 [[tools.aube]]
-version = "1.33.1"
+version = "1.34.0"
 backend = "github:endevco/aube"
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:e830a24d96205ad92b7dbb8ec1794f959cb37765bbbf7de61c5a6c06ee020c24"
-url = "https://github.com/jdx/aube/releases/download/v1.33.1/aube-v1.33.1-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/489853573"
+checksum = "sha256:44f38fe924e5bb91818d855a4eabcbcbfbce8b0c2d57b39d5bff28a7ec4ee131"
+url = "https://github.com/jdx/aube/releases/download/v1.34.0/aube-v1.34.0-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/490930531"
 provenance = "github-attestations"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:7aa9c39feef648796338ef540fa1af886683d20058691dfb69169fe47aea3d99"
-url = "https://github.com/jdx/aube/releases/download/v1.33.1/aube-v1.33.1-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/489860006"
+checksum = "sha256:dc586837830d9cd07368f72c332cfeba1c670d4918c2aac2d2b856191aba8b2c"
+url = "https://github.com/jdx/aube/releases/download/v1.34.0/aube-v1.34.0-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/jdx/aube/releases/assets/490949647"
 provenance = "github-attestations"
 
 [[tools.bat]]
@@ -139,16 +139,16 @@ url = "https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Darwin_arm6
 url_api = "https://api.github.com/repos/derailed/k9s/releases/assets/440224326"
 
 [[tools.node]]
-version = "26.5.0"
+version = "26.5.1"
 backend = "core:node"
 
 [tools.node."platforms.linux-arm64"]
-checksum = "sha256:308e5fe89a82461ba5a6cf15ff5221b2cdbd7ae87600aa72bb3c3fbdc66412d1"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-linux-arm64.tar.gz"
+checksum = "sha256:21194bbf41c18d9ec277545c4d14cce8597d57a9d9f494c323d8121a25de33e8"
+url = "https://nodejs.org/dist/v26.5.1/node-v26.5.1-linux-arm64.tar.gz"
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:ee920559aaa2391569cff4d737e3b83963430e3a14dedd91bfe0ff53171b5af9"
-url = "https://nodejs.org/dist/v26.5.0/node-v26.5.0-darwin-arm64.tar.gz"
+checksum = "sha256:f4387df0b46556516d19abf2f2d6806481ac8368aa7f9d96bafed422a56a1d01"
+url = "https://nodejs.org/dist/v26.5.1/node-v26.5.1-darwin-arm64.tar.gz"
 
 [[tools.prek]]
 version = "0.4.11"
