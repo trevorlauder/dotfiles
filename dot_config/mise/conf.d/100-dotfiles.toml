@@ -8,9 +8,9 @@ bat = "0.26.1"
 prek = "0.4.12"
 chezmoi = "2.72.0"
 aube = "v1.37.0"
-node = "26.6.0"
-"aqua:astral-sh/uv" = "0.12.1"
-python = "3.14.6"
+node = "26.7.0"
+"aqua:astral-sh/uv" = "0.12.2"
+python = "3.14.7"
 
 [settings.ruby]
 compile = false
