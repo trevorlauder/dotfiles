@@ -31,15 +31,15 @@ url_api = "https://api.github.com/repos/j178/prek/releases/assets/508529745"
 provenance = "github-attestations"
 
 [[tools.trufflehog]]
-version = "v3.96.0"
+version = "v3.97.0"
 backend = "aqua:trufflesecurity/trufflehog"
 
 [tools.trufflehog."platforms.linux-arm64"]
-checksum = "sha256:50acd4c7a3b8ebfe5083d8350956057030c44be3515dedd55b45263495c490b2"
-url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.96.0/trufflehog_3.96.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/trufflesecurity/trufflehog/releases/assets/488705114"
+checksum = "sha256:f48f57e3d4343377865b1b64653f96d381d61a7792d89d026e85524732039fde"
+url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.0/trufflehog_3.97.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/trufflesecurity/trufflehog/releases/assets/514775385"
 
 [tools.trufflehog."platforms.macos-arm64"]
-checksum = "sha256:87478306b95ca2420cfb844b7582383ac60b922e262350a0088e797f328d2e62"
-url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.96.0/trufflehog_3.96.0_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/trufflesecurity/trufflehog/releases/assets/488705115"
+checksum = "sha256:ad0a99bd48d6df80eabab24d11d0fd771e245fc55ed347f943cafb5e5f497c5c"
+url = "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.0/trufflehog_3.97.0_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/trufflesecurity/trufflehog/releases/assets/514775386"
