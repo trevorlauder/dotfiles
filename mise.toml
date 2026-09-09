@@ -5,4 +5,4 @@ minimum_release_age = "7d"
 [tools]
 dprint = "0.57.0"
 trufflehog = "v3.97.1"
-prek = "0.5.0"
+prek = "0.5.1"
