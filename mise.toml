@@ -3,6 +3,6 @@ lockfile = true
 minimum_release_age = "7d"
 
 [tools]
-dprint = "0.57.0"
-trufflehog = "v3.97.2"
+dprint = "0.57.1"
+trufflehog = "v3.97.4"
 prek = "0.5.2"
