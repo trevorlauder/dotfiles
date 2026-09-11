@@ -17,19 +17,19 @@ url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/540200930"
 provenance = "github-attestations"
 
 [[tools.aube]]
-version = "1.41.0"
-backend = "github:endevco/aube"
+version = "v2.2.9"
+backend = "aqua:jdx/aube"
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:012b0da68e9e285aee1564178b2a668f4d79eac9b40868112674ff03c2cdfe22"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517186261"
+checksum = "sha256:4fa6d439992097a91fc96a481c67c0cfbf9ecd8d43a36c70ca4ae65c09d8e8f9"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.9/aube-v2.2.9-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/543704857"
 provenance = "github-attestations"
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:635720a45125b3cc8afb2979c9a18ed484deecfc91938e9d941e278f529e87e1"
-url = "https://github.com/jdx/aube/releases/download/v1.41.0/aube-v1.41.0-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/jdx/aube/releases/assets/517208780"
+checksum = "sha256:b94c1e5a1b6a8049f785e99c8c03b1f922c25ce3efa8ec31c0c8ff84237eb3e4"
+url = "https://github.com/aubepkg/aube/releases/download/v2.2.9/aube-v2.2.9-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/aubepkg/aube/releases/assets/543705939"
 provenance = "github-attestations"
 
 [[tools.bat]]
