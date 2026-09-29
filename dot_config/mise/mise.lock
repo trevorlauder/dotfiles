@@ -5,9 +5,9 @@ version = "0.12.17"
 backend = "aqua:astral-sh/uv"
 
 [tools."aqua:astral-sh/uv"."platforms.linux-arm64"]
-checksum = "sha256:d636d1b678e9e7f367ecb22b46bd1cabbed234d6bc3b4d96365d2b507f72f86c"
-url = "https://github.com/astral-sh/uv/releases/download/0.12.17/uv-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/573252936"
+checksum = "sha256:a6096da273d548cb9f277d237a01ac7344a39ef0f455c0e148e4dc9737c1596b"
+url = "https://github.com/astral-sh/uv/releases/download/0.12.17/uv-aarch64-unknown-linux-musl.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/573252947"
 provenance = "github-attestations"
 
 [tools."aqua:astral-sh/uv"."platforms.macos-arm64"]
@@ -169,13 +169,13 @@ version = "3.14.7"
 backend = "core:python"
 
 [tools.python."platforms.linux-arm64"]
-checksum = "sha256:8a0798baa8a2c27b5751d590aced543eaa85e20b3f73d93c1af049688acdc9c5"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
+checksum = "sha256:d922413468a276e69a132b79fb7493faa46ef2e85b1a29844d3af1f7710ab5bd"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260924/cpython-3.14.7+20260924-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.macos-arm64"]
-checksum = "sha256:4632cb1a6edad9e73d3c81b6d2e69131637d995173e3e85005df14102b0592ba"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260901/cpython-3.14.7+20260901-aarch64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "sha256:f0fb6b233971672dd7add4efa90f8c209a63253e457ffabd0148b9f734638319"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260924/cpython-3.14.7+20260924-aarch64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [[tools.rg]]
