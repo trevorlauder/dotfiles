@@ -13,6 +13,10 @@
   },
   "packageRules": [
     {
+      "packageNames": ["github:fwdcloudsec/granted"],
+      "enabled": false
+    },
+    {
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
