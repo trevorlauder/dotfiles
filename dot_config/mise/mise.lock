@@ -95,29 +95,30 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.74.4/fzf-0.74.4-darw
 url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/558287774"
 
 [[tools.github-cli]]
-version = "2.101.0"
+version = "2.102.0"
 backend = "aqua:cli/cli"
 
 [tools.github-cli."platforms.linux-arm64"]
-checksum = "sha256:b57e8063f18862647c9d22727c32e9da1b963f8bf9db648fe123a6975695640f"
-url = "https://github.com/cli/cli/releases/download/v2.101.0/gh_2.101.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/565857147"
+checksum = "sha256:7862c86c72f43df3a2d93ddde6f473285b4e2af61b494849846827e513ef6484"
+url = "https://github.com/cli/cli/releases/download/v2.102.0/gh_2.102.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/599854680"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.macos-arm64"]
-checksum = "sha256:e4303e39d8f07141c4bad4b99b01079f05029c59b27076e8fbc825c985ecdd8b"
-url = "https://github.com/cli/cli/releases/download/v2.101.0/gh_2.101.0_macOS_arm64.zip"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/565857200"
+checksum = "sha256:da922c20d1792e5b2cbf375593d7a658acf034c12c84e007e71c76ef959c337e"
+url = "https://github.com/cli/cli/releases/download/v2.102.0/gh_2.102.0_macOS_arm64.zip"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/599854720"
 provenance = "github-attestations"
 
 [[tools."github:fwdcloudsec/granted"]]
-version = "0.38.0"
+version = "v0.39.0"
 backend = "github:fwdcloudsec/granted"
 
 [tools."github:fwdcloudsec/granted"."platforms.linux-arm64"]
-checksum = "sha256:3c27a5740cdcd2b414a70b90cc381eb57323128401e9705ae8587f6df8f8e633"
-url = "https://github.com/fwdcloudsec/granted/releases/download/v0.38.0/granted_0.38.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/233275666"
+checksum = "sha256:9c58bc4cb4c808dfb01d391f37eb3e5e27ebd2cecdff9644a95b781e9215a57e"
+url = "https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/383674032"
+provenance = "github-attestations"
 
 [tools."github:fwdcloudsec/granted"."platforms.macos-arm64"]
 checksum = "sha256:cfab086d85baa4177060391d94b6d61ae141dc67659eb7e803ecee4ae4789cf6"
@@ -181,17 +182,17 @@ url_api = "https://api.github.com/repos/j178/prek/releases/assets/594534934"
 provenance = "github-attestations"
 
 [[tools.python]]
-version = "3.14.7"
+version = "3.14.8"
 backend = "core:python"
 
 [tools.python."platforms.linux-arm64"]
-checksum = "sha256:9b8bd45d06fc3fcdc56f2713a62535fe1c019816461ae87c170dd56184dd3f4d"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260929/cpython-3.14.7+20260929-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
+checksum = "sha256:ece2bf3d4b47c80c2403c5f32fa51a9458abaee93c10def8acafb5f45163e77d"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261003/cpython-3.14.8+20261003-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [tools.python."platforms.macos-arm64"]
-checksum = "sha256:44b4716f4e63bc85e1c07ea2aca730d13a0ec3557d06526d84a13b1d111cf4f9"
-url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260929/cpython-3.14.7+20260929-aarch64-apple-darwin-install_only_stripped.tar.gz"
+checksum = "sha256:ed14e9042f36c0aa18383f5d9729bcbf17847e842666a793b5a5a5d8505c0ca1"
+url = "https://github.com/astral-sh/python-build-standalone/releases/download/20261003/cpython-3.14.8+20261003-aarch64-apple-darwin-install_only_stripped.tar.gz"
 provenance = "github-attestations"
 
 [[tools.rg]]
