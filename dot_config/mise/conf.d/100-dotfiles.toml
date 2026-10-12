@@ -2,7 +2,7 @@
 experimental = true
 
 [tools]
-delta = "0.19.2"
+delta = "0.20.1"
 starship = "1.26.0"
 bat = "0.26.1"
 prek = "0.5.4"
