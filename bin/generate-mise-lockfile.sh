@@ -4,6 +4,7 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 mise_dir="$repo_root/dot_config/mise"
 lockfile="$mise_dir/mise.lock"
+sidecar_dir="$mise_dir/dot_mise"
 
 tmp_config_dir="$(mktemp -d)"
 cleanup() { rm -rf "$tmp_config_dir"; }
@@ -35,8 +36,17 @@ dropped="$(comm -23 <(echo "$declared_tools") <(echo "$locked_tools"))"
 
 cp "$tmp_config_dir/mise.lock" "$lockfile"
 
+rm -rf "$sidecar_dir"
+if [[ -d "$tmp_config_dir/.mise" ]]; then
+  mkdir -p "$sidecar_dir"
+  cp -R "$tmp_config_dir/.mise/." "$sidecar_dir/"
+fi
+
 echo
 echo "Wrote $lockfile"
+if [[ -d "$sidecar_dir" ]]; then
+  echo "Wrote $sidecar_dir"
+fi
 
 if [[ -n "$dropped" ]]; then
   echo
