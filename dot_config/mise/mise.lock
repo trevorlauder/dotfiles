@@ -3,9 +3,9 @@
 lockfile_version = 3
 
 [[tools."aqua:astral-sh/uv"]]
-version = "0.13.1"
+version = "0.13.3"
 backend = "aqua:astral-sh/uv"
-specifiers = ["0.13.1"]
+specifiers = ["0.13.3"]
 
 [tools."aqua:astral-sh/uv"."platforms.linux-arm64"]
 checksum = "sha256:9041c73c99fdc5892cf128140beb354eca9231d502068cc36e6cb53a8e59ad14"
@@ -20,19 +20,21 @@ url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/639312976"
 provenance = "github-attestations"
 
 [[tools.aube]]
-version = "2.7.2"
+version = "2.8.0"
 backend = "packslip:github.com/aubepkg/aube"
-specifiers = ["v2.7.2"]
+specifiers = ["v2.8.0"]
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:fccdb28fe420560eb0d18c64c69a755c2b2aa0223fcf6f953ade264685273ef5"
-url = "https://github.com/aubepkg/aube/releases/download/v2.7.2/aube-v2.7.2-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:064c68059dcbd32c7744cf9a0e77eb68593b7979453a2c9808427b13d1d7e397"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.0/aube-v2.8.0-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
+repository_ids = { repository = "1214542327" }
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:38c144fcd38350cea58d680c351c2f2d85891dabf65821e3d0711a331250c3dd"
-url = "https://github.com/aubepkg/aube/releases/download/v2.7.2/aube-v2.7.2-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:e131b822724760ea5c94bc59a2ae22eee8be2f866d1634c19f1fa10f62ae19e3"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.0/aube-v2.8.0-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
+repository_ids = { repository = "1214542327" }
 
 [[tools.bat]]
 version = "0.26.1"
@@ -120,19 +122,15 @@ url_api = "https://api.github.com/repos/cli/cli/releases/assets/599854720"
 provenance = "github-attestations"
 
 [[tools."github:fwdcloudsec/granted"]]
-version = "0.38.0"
+version = "0.39.0"
 backend = "github:fwdcloudsec/granted"
-specifiers = ["v0.38.0"]
+specifiers = ["v0.39.0"]
 
 [tools."github:fwdcloudsec/granted"."platforms.linux-arm64"]
-checksum = "sha256:3c27a5740cdcd2b414a70b90cc381eb57323128401e9705ae8587f6df8f8e633"
-url = "https://github.com/fwdcloudsec/granted/releases/download/v0.38.0/granted_0.38.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/233275666"
-
-[tools."github:fwdcloudsec/granted"."platforms.macos-arm64"]
-checksum = "sha256:cfab086d85baa4177060391d94b6d61ae141dc67659eb7e803ecee4ae4789cf6"
-url = "https://github.com/fwdcloudsec/granted/releases/download/v0.38.0/granted_0.38.0_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/233275732"
+checksum = "sha256:9c58bc4cb4c808dfb01d391f37eb3e5e27ebd2cecdff9644a95b781e9215a57e"
+url = "https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/383674032"
+provenance = "github-attestations"
 
 [[tools.k6]]
 version = "2.3.0"
@@ -178,9 +176,9 @@ checksum = "sha256:2a154d4a5458930e0a2d6a1ecf64eddf5a2b3e1c13636b609c2ecb042e8c4
 url = "https://nodejs.org/dist/v26.12.0/node-v26.12.0-darwin-arm64.tar.gz"
 
 [[tools.prek]]
-version = "0.5.5"
+version = "0.5.6"
 backend = "aqua:j178/prek"
-specifiers = ["0.5.5"]
+specifiers = ["0.5.6"]
 
 [tools.prek."platforms.linux-arm64"]
 checksum = "sha256:420451a13aaf3de670dfe73b25e18dbca0d96bc3b153cc3924b9d01c3b7caa12"
