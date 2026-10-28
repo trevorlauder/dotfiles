@@ -3,36 +3,36 @@
 lockfile_version = 3
 
 [[tools."aqua:astral-sh/uv"]]
-version = "0.13.3"
+version = "0.13.4"
 backend = "aqua:astral-sh/uv"
-specifiers = ["0.13.3"]
+specifiers = ["0.13.4"]
 
 [tools."aqua:astral-sh/uv"."platforms.linux-arm64"]
-checksum = "sha256:9041c73c99fdc5892cf128140beb354eca9231d502068cc36e6cb53a8e59ad14"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.1/uv-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/639312990"
+checksum = "sha256:1ae72b4718729e2ccc4f1ae2c6d1e531ca8467800e0546e9130b3886023a60ab"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.4/uv-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/659693320"
 provenance = "github-attestations"
 
 [tools."aqua:astral-sh/uv"."platforms.macos-arm64"]
-checksum = "sha256:cfe454573412ff7380d15fc7dae5997ab53ffce72fce0a78e91ddbc84001acd2"
-url = "https://github.com/astral-sh/uv/releases/download/0.13.1/uv-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/639312976"
+checksum = "sha256:e0b1d4743ce64c55d9f0f4a444afa6b81125680070ee04e853fcd0f6c1ebf8f1"
+url = "https://github.com/astral-sh/uv/releases/download/0.13.4/uv-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/astral-sh/uv/releases/assets/659693291"
 provenance = "github-attestations"
 
 [[tools.aube]]
-version = "2.8.0"
+version = "2.8.1"
 backend = "packslip:github.com/aubepkg/aube"
-specifiers = ["v2.8.0"]
+specifiers = ["v2.8.1"]
 
 [tools.aube."platforms.linux-arm64"]
-checksum = "sha256:064c68059dcbd32c7744cf9a0e77eb68593b7979453a2c9808427b13d1d7e397"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.0/aube-v2.8.0-aarch64-unknown-linux-gnu.tar.gz"
+checksum = "sha256:12eda315743aea0a1a66eedaf4ebd2f2de80d985c71cf21d44475cf6c9f8728c"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-aarch64-unknown-linux-gnu.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327" }
 
 [tools.aube."platforms.macos-arm64"]
-checksum = "sha256:e131b822724760ea5c94bc59a2ae22eee8be2f866d1634c19f1fa10f62ae19e3"
-url = "https://github.com/aubepkg/aube/releases/download/v2.8.0/aube-v2.8.0-aarch64-apple-darwin.tar.gz"
+checksum = "sha256:f5eca610159c38c5ab6d5766348305b2d391de436349c7abd49a967b289a895f"
+url = "https://github.com/aubepkg/aube/releases/download/v2.8.1/aube-v2.8.1-aarch64-apple-darwin.tar.gz"
 signer = "sigstore-oidc:https://github.com/aubepkg/aube/.github/workflows/release.yml"
 repository_ids = { repository = "1214542327" }
 
@@ -52,20 +52,20 @@ url = "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-aarc
 url_api = "https://api.github.com/repos/sharkdp/bat/releases/assets/323548442"
 
 [[tools.chezmoi]]
-version = "2.73.2"
+version = "2.73.3"
 backend = "aqua:twpayne/chezmoi"
-specifiers = ["2.73.2"]
+specifiers = ["2.73.3"]
 
 [tools.chezmoi."platforms.linux-arm64"]
-checksum = "sha256:db92b343a32cade0b1d4ff5e30da54c5156f7a580349281e583a5402c57c7bcf"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.73.2/chezmoi_2.73.2_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/650772286"
+checksum = "sha256:c9e6a6e71eb5291018e161a8426d7c313cd2e8553c2ca4029511fec2a33bc28c"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi_2.73.3_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/659666007"
 provenance = "cosign"
 
 [tools.chezmoi."platforms.macos-arm64"]
-checksum = "sha256:b41f5a51700a7dc0b7c2ae02652d42824ee112d3d97cb2f3c725d53e8d9f6b32"
-url = "https://github.com/twpayne/chezmoi/releases/download/v2.73.2/chezmoi_2.73.2_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/650772106"
+checksum = "sha256:ec2d0005f369c912ee9891a26c30d65dc0eda51708f06948e5f7a43db69e1aa7"
+url = "https://github.com/twpayne/chezmoi/releases/download/v2.73.3/chezmoi_2.73.3_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/twpayne/chezmoi/releases/assets/659665869"
 provenance = "cosign"
 
 [[tools.delta]]
@@ -105,31 +105,37 @@ url = "https://github.com/junegunn/fzf/releases/download/v0.74.5/fzf-0.74.5-darw
 url_api = "https://api.github.com/repos/junegunn/fzf/releases/assets/629581702"
 
 [[tools.github-cli]]
-version = "2.102.0"
+version = "2.102.1"
 backend = "aqua:cli/cli"
-specifiers = ["2.102.0"]
+specifiers = ["2.102.1"]
 
 [tools.github-cli."platforms.linux-arm64"]
-checksum = "sha256:7862c86c72f43df3a2d93ddde6f473285b4e2af61b494849846827e513ef6484"
-url = "https://github.com/cli/cli/releases/download/v2.102.0/gh_2.102.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/599854680"
+checksum = "sha256:5019b3cc6e8a03bb4d88600f8dbda2add8e6407705c159b0c63151036e77a1af"
+url = "https://github.com/cli/cli/releases/download/v2.102.1/gh_2.102.1_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/660284837"
 provenance = "github-attestations"
 
 [tools.github-cli."platforms.macos-arm64"]
-checksum = "sha256:da922c20d1792e5b2cbf375593d7a658acf034c12c84e007e71c76ef959c337e"
-url = "https://github.com/cli/cli/releases/download/v2.102.0/gh_2.102.0_macOS_arm64.zip"
-url_api = "https://api.github.com/repos/cli/cli/releases/assets/599854720"
+checksum = "sha256:08bfef98b50c553df122bb34ee8dcf415cae7d3b108891488964a0df07aa2aeb"
+url = "https://github.com/cli/cli/releases/download/v2.102.1/gh_2.102.1_macOS_arm64.zip"
+url_api = "https://api.github.com/repos/cli/cli/releases/assets/660284918"
 provenance = "github-attestations"
 
 [[tools."github:fwdcloudsec/granted"]]
-version = "0.39.0"
+version = "0.40.0"
 backend = "github:fwdcloudsec/granted"
-specifiers = ["v0.39.0"]
+specifiers = ["v0.40.0"]
 
 [tools."github:fwdcloudsec/granted"."platforms.linux-arm64"]
-checksum = "sha256:9c58bc4cb4c808dfb01d391f37eb3e5e27ebd2cecdff9644a95b781e9215a57e"
-url = "https://github.com/fwdcloudsec/granted/releases/download/v0.39.0/granted_0.39.0_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/383674032"
+checksum = "sha256:0da965ca9b8200ce75794be246677a2f15909a9a87db89a9dc512aecee09a55d"
+url = "https://github.com/fwdcloudsec/granted/releases/download/v0.40.0/granted_0.40.0_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/660465575"
+provenance = "github-attestations"
+
+[tools."github:fwdcloudsec/granted"."platforms.macos-arm64"]
+checksum = "sha256:55d2848b914f1ccf3c16f76630cd9679030a82f5110afe74d0ebb91287cdab8c"
+url = "https://github.com/fwdcloudsec/granted/releases/download/v0.40.0/granted_0.40.0_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/fwdcloudsec/granted/releases/assets/660465629"
 provenance = "github-attestations"
 
 [[tools.k6]]
@@ -163,17 +169,17 @@ url = "https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Darwin_arm6
 url_api = "https://api.github.com/repos/derailed/k9s/releases/assets/440224326"
 
 [[tools.node]]
-version = "26.12.0"
+version = "26.12.1"
 backend = "core:node"
-specifiers = ["26.12.0"]
+specifiers = ["26.12.1"]
 
 [tools.node."platforms.linux-arm64"]
-checksum = "sha256:ec53c915c3fdd8786c5685abd25ae3fe9fba0692307f9811d7caaadea1bcaf03"
-url = "https://nodejs.org/dist/v26.12.0/node-v26.12.0-linux-arm64.tar.gz"
+checksum = "sha256:a6c01af459dd8972ab3fb08ee5da81244d26ba8c4944a62d5bbba8c597ae154f"
+url = "https://nodejs.org/dist/v26.12.1/node-v26.12.1-linux-arm64.tar.gz"
 
 [tools.node."platforms.macos-arm64"]
-checksum = "sha256:2a154d4a5458930e0a2d6a1ecf64eddf5a2b3e1c13636b609c2ecb042e8c4553"
-url = "https://nodejs.org/dist/v26.12.0/node-v26.12.0-darwin-arm64.tar.gz"
+checksum = "sha256:1901d539912c02afa10d1cc126943a8855a7eedebe830119463470db5e6c59e8"
+url = "https://nodejs.org/dist/v26.12.1/node-v26.12.1-darwin-arm64.tar.gz"
 
 [[tools.prek]]
 version = "0.5.6"
