@@ -84,10 +84,10 @@ url = "https://github.com/dandavison/delta/releases/download/0.20.1/delta-0.20.1
 url_api = "https://api.github.com/repos/dandavison/delta/releases/assets/610498923"
 
 [[tools.devcontainer-cli]]
-version = "0.89.0"
-aube = { path = ".mise/locks/devcontainer-cli/0.89.0", digest = "sha256:68614a6c34df4eae5d4ae9c2c67b76eb734b6c6e4e95cc0f20bfe7d3fdde45da" }
+version = "0.90.0"
+aube = { path = ".mise/locks/devcontainer-cli/0.89.0", digest = "sha256:8a8a9e59feed6f3c786e90fcb8b436fec9cf4fa84a33211fc5998570a65501e2" }
 backend = "npm:@devcontainers/cli"
-specifiers = ["0.89.0"]
+specifiers = ["0.90.0"]
 
 [[tools.fzf]]
 version = "0.74.5"
