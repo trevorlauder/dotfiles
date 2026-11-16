@@ -231,19 +231,21 @@ url = "https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15
 url_api = "https://api.github.com/repos/BurntSushi/ripgrep/releases/assets/478118851"
 
 [[tools.rtk]]
-version = "v1.1.0"
+version = "v1.2.0"
 backend = "aqua:rtk-ai/rtk"
-specifiers = ["v1.1.0"]
+specifiers = ["v1.2.0"]
 
 [tools.rtk."platforms.linux-arm64"]
-checksum = "sha256:a5c00c3ab0129884bcb757d348afc1a650efa0f4f0769da97c341f28f89719ed"
-url = "https://github.com/rtk-ai/rtk/releases/download/v1.1.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/675762787"
+checksum = "sha256:93c1dcd37fd5fcae8fa772a5b5c34a30af142ace4f4081c8f98319146b7a10a4"
+checksum_source = "mise-versions"
+url = "https://github.com/rtk-ai/rtk/releases/download/v1.2.0/rtk-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/723664873"
 
 [tools.rtk."platforms.macos-arm64"]
-checksum = "sha256:8da773b0954cf90b115ec95c4e4eb420f04c39de233c5db102246a6caf073ba7"
-url = "https://github.com/rtk-ai/rtk/releases/download/v1.1.0/rtk-aarch64-apple-darwin.tar.gz"
-url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/675762802"
+checksum = "sha256:a2c411ffa49a8595b408c151ea47c9a812268924a76eaeecbc3a5065b02207ff"
+checksum_source = "mise-versions"
+url = "https://github.com/rtk-ai/rtk/releases/download/v1.2.0/rtk-aarch64-apple-darwin.tar.gz"
+url_api = "https://api.github.com/repos/rtk-ai/rtk/releases/assets/723664868"
 
 [[tools.starship]]
 version = "1.27.0"
